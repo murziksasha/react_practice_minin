@@ -1,4 +1,5 @@
 import './navbar.scss';
+import { NavLink } from 'react-router-dom';
 
 import React from 'react';
 
@@ -10,10 +11,10 @@ const Navbar = () => {
       </div>
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a href="#!" className="nav-link">Main</a>
+          <NavLink to="/" className="nav-link">Main</NavLink>
         </li>
         <li className="nav-item">
-          <a href="#!" className="nav-link">Information</a>
+          <NavLink to="/about" className="nav-link">Information</NavLink>
         </li>
       </ul>
     </nav>
