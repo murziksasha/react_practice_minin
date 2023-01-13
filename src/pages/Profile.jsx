@@ -2,7 +2,8 @@
 
 import React from 'react';
 
-const Profile = () => {
+const Profile = ({match}) => {
+  console.log(match)
   return (
     <div>
       <h1>Profile Page</h1>

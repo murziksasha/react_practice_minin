@@ -3,13 +3,13 @@ import {Link} from 'react-router-dom';
 
 
 
-const Card = () => {
+const Card = ({user}) => {
   return (
     <div className='card mt-4'>
-      <img src={""} alt={""} className='card-img-top' />
+      <img src={user.avatar_url} alt={user.login} className='card-img-top' />
       <div className="card-body">
-        <h5 className="card-title">React JS</h5>
-        <Link to={'profile/'} className='btn btn-primary'>OPEN</Link>
+        <h5 className="card-title">{user.login}</h5>
+        <Link to={'profile/' + user.login} className='btn btn-primary'>OPEN</Link>
       </div>
     </div>
   );
